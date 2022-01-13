@@ -10,9 +10,14 @@ async function upperLoop(){
 		stop roll();
 }
 
+async function lowerLoop(){
+		setSpeed(80);
+		await spin(-355,4.5);
+		stop roll();
+}
 
 async function startProgram(){
 		await upperLoop();
-		
+		await lowerLoop();
 }
 		
