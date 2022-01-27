@@ -10,7 +10,7 @@ async function startProgram() {
 	setMainLed({ r:0, g:0, b: 255 })
 	stopRoll();
 	setHeading(90);
-	await roll(0, 40, 2);
+	await roll(0, 40, 2);  
 	await speak('musik note number 1');
 	
 }
